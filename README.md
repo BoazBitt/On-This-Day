@@ -1,8 +1,7 @@
 # Wikipedia "On This Day" Featured Events Landing Page
 
 ## Overview
-
-This static website was developed as part of a job interview task. It dynamically displays the "On This Day" selected historical events from Wikipedia's API, designed to function similarly to our landing page.
+This static website was developed as part of a job interview task. It dynamically displays the "On This Day" selected historical events from Wikipedia's API, designed to function similarly to our landing page. The interface utilizes MUI (Material-UI) for its React components, providing a polished and responsive design.
 
 ## Features
 
