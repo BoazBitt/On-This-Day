@@ -37,6 +37,6 @@ export default OptionContextProvider;
 
 export const useOptions = (): OptionContextProps => {
   const context = useContext(OptionContext);
-  if (context) return null;
+  if (!context) return null;
   return context;
 };

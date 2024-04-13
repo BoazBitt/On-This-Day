@@ -1,16 +1,11 @@
-import React from "react";
 import classes from "./MainPage.module.scss";
 import EventList from "../EventList/EventList";
 import { getDate } from "../utilis/functions";
-import { useOptions } from "../../Context"; // Make sure to import OptionContextProps
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
 
 const BASE_URL = `https://en.m.wikipedia.org/wiki/`;
 
 const MainPage = () => {
-  const { options, setOptions } = useOptions();
-  const theme = options.Theme;
-  const themeClass = theme === "light" ? classes.__light : classes.__dark;
-  console.log(themeClass);
   const { dayOfMonth, monthName, monthNumber, year } = getDate();
   const suffix =
     dayOfMonth === 1
@@ -27,14 +22,12 @@ const MainPage = () => {
   };
 
   return (
-    <div>
-      <button>clickME!</button>
-      <div className={classes.__pageContent}>
-        <h1 onClick={onClickHandler}>
-          {monthName} {day}, {year}
-        </h1>
-        <EventList monthNumber={monthNumber} dayOfMonth={dayOfMonth} />
-      </div>
+    <div className={classes.__pageContent}>
+      <ToggleTheme />
+      <h1 onClick={onClickHandler}>
+        {monthName} {day}, {year}
+      </h1>
+      <EventList monthNumber={monthNumber} dayOfMonth={dayOfMonth} />
     </div>
   );
 };

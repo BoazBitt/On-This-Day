@@ -15,8 +15,8 @@ const EventList = ({ monthNumber, dayOfMonth }: EventListProps) => {
     queryFn: () => getOnThisDayEvents(monthNumber, dayOfMonth),
   });
 
-  if (isLoading) return <div>Loading...</div>; // Loading state
-  if (!data) return <div>Error!</div>; //Error State
+  if (isLoading) return <div>Loading...</div>;
+  if (!data) return <div>Error!</div>;
   return (
     <Grid sx={{ flexGrow: 1 }} container spacing={2}>
       <Grid item xs={12}>

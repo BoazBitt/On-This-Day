@@ -22,7 +22,7 @@ export const getOnThisDayEvents = async (
         headers: { ...HEADERS },
       }
     );
-
+    console.log(data);
     return data;
   } catch (error: any) {
     throw error;

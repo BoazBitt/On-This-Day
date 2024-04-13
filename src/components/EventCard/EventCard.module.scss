@@ -1,0 +1,7 @@
+.__card {
+  &:hover {
+    cursor: pointer;
+    background-color: #e7e7e7;
+    transform: scale(1.05);
+  }
+}

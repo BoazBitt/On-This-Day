@@ -1,0 +1,13 @@
+body {
+  .__light {
+    color: black;
+    background: white;
+    transition: 0.3s ease-in;
+  }
+
+  .__dark {
+    color: white;
+    background: black;
+    transition: 0.3s ease-in;
+  }
+}
