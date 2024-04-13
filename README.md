@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Wikipedia "On This Day" Featured Events Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This static website was developed as part of a job interview task. It dynamically displays the "On This Day" selected historical events from Wikipedia's API, designed to function similarly to our landing page.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Responsive Web Design**: Ensures the webpage is functional and visually appealing on desktops, tablets, and mobile devices.
+- **Theme Toggling**: Users can switch between light and dark mode using React Context.
+- **Data Fetching and Caching**: Utilizes `@tanstack/react-query` for efficient data fetching and caching from the Wikipedia API.
+- **Accessibility Features**: Implements accessibility features to make the website usable for people with disabilities.
+- **Performance Optimizations**: Includes techniques to enhance the site's performance and speed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technology Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React.js**: For building the user interface.
+- **TypeScript**: For adding type safety to the JavaScript code.
+- **React Context**: For state management across the application, particularly for theme toggling.
+- **@tanstack/react-query**: For managing server state in React applications, specifically for data fetching, caching, and updating.
 
-### `npm test`
+## API Endpoint
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This application fetches data from the Wikipedia API:
+`https://api.wikimedia.org/feed/v1/wikipedia/en/onthisday/selected/{MM}/{DD}`
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: For building the user interface.
+- **TypeScript**: Provides static type checking.
+- **React Context**: Used for managing theme state.
+- **@tanstack/react-query**: Used for fetching, caching, and updating the API data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Local Development
 
-### `npm run eject`
+To set up this project locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository:
+   ```bash
+   git clone [your-repository-url]
+   cd [project-directory]
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm start
+   ```
+4. Open http://localhost:3000 to view it in the browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deployed Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The website is deployed and can be accessed at the following URL:
+[Deployed Website Link Here](https://on-this-day.onrender.com)
